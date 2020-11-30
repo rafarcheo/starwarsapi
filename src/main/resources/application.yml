@@ -1,0 +1,16 @@
+server:
+  port: 8084
+
+management:
+  server:
+    port: 9000
+  endpoints:
+    web:
+      exposure:
+        include: health, shutdown, prometheus, metrics
+  endpoint:
+    shutdown:
+      enabled: true
+
+star.wars:
+  apiBaseUrl: "http://swapi.dev/api/"
